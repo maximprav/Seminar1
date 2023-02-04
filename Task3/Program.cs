@@ -33,3 +33,11 @@ if (number == 7)
 {
     Console.Write(" Sunday ");
 }
+if (number > 7) 
+{
+    Console.Write(" Неверно заданное число ");
+}
+if (number < 1) 
+{
+    Console.Write(" Неверно заданное число ");
+}
