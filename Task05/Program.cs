@@ -6,15 +6,21 @@
 
 Console.Clear();
 int num = 1;
-while (num <= 100);
-{
-    if (num%3 == 0)
+while (num <= 100)
+{   if ((num%3 == 0) & (num%5 == 0))
     {
-        Console.WriteLine("Fizz");
+        Console.Write("FizzBuzz, ");
     }
-    if (num%5 == 0)
+    else if (num%3 == 0)
     {
-        Console.WriteLine("Buzz");
+        Console.Write("Fizz, ");
     }
+    else if (num%5 == 0)
+    {
+        Console.Write("Buzz, ");
+    }
+    
+Console.Write($"{num}, ");
+
 num++;
 }
